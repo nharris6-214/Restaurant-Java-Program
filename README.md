@@ -1,5 +1,9 @@
 # Restaurant-Java-Program
 
-## Ideas
-
-- code
+### properties
+- int waitTime
+- double rating
+- double avgPrice
+- double distance
+- String hoursOpen
+<!--Menu Items (Type?)-->
