@@ -1,23 +1,26 @@
-import java.sql.SQLOutput;
+import javax.swing.*;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
 
-        Restaurant McDonalds = new Restaurant(30, 3.5, 12, 0.2, "5am-11pm");
-        Restaurant Chipotle = new Restaurant(30, 3.5, 15, 1.5, "6am-9pm");
+        // Take user input using JOptionPane and store in variable
 
-        System.out.println("Chipotle");
-        System.out.println(Chipotle.waitTime);
-        System.out.println(Chipotle.rating);
-        System.out.println(Chipotle.avgPrice);
-        System.out.println(Chipotle.distance);
-        System.out.println(Chipotle.hoursOpen);
-        System.out.println("---");
-        System.out.println("McDonalds");
-        System.out.println(McDonalds.waitTime);
-        System.out.println(McDonalds.rating);
-        System.out.println(McDonalds.avgPrice);
-        System.out.println(McDonalds.distance);
-        System.out.println(McDonalds.hoursOpen);
+        String name = JOptionPane.showInputDialog("Enter Restaurant Name: ");
+        int waitTime = Integer.parseInt(JOptionPane.showInputDialog("Enter Average Wait Time in Minutes (ex. 30): "));
+        double rating = Double.parseDouble(JOptionPane.showInputDialog("Enter Restaurant Rating (ex. 0.0-5.0 Stars): "));
+        double avgPrice = Double.parseDouble(JOptionPane.showInputDialog("Enter Average Cost (ex. 12.50): "));
+        double distance = Double.parseDouble(JOptionPane.showInputDialog("Enter Distance From You In Miles (ex. 5.0): "));
+        String hoursOpen = JOptionPane.showInputDialog("Enter Hours of Operation (ex. am-pm): ");
+
+        // Instantiate Restaurant object with those variables
+        ArrayList<Restaurant> restaurantList = new ArrayList<>();
+
+        Restaurant userRestaurant = new Restaurant(name, waitTime, rating, avgPrice, distance, hoursOpen);
+        System.out.println(userRestaurant);
+        
+
+        // Add User's Restaurant Object to the Array List
+        restaurantList.add(userRestaurant);
     }
 }
