@@ -7,3 +7,6 @@
 - double distance
 - String hoursOpen
 <!--Menu Items (Type?)-->
+
+### what I learned (2/18)
+
