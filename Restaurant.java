@@ -71,10 +71,10 @@ public class Restaurant {
 
 
     public String toString() {
-        return "Restaurant Name:\t" + name +
-        "\nWait Time:\t\t\t" + waitTime + " minutes" +
-        "\nRating:\t\t\t\t" + rating + "/5" +
-        "\nAverage Price:\t\t$" + avgPrice +
+        return "\n\nRestaurant Name:\t" + name +
+        "\nWait Time:\t\t\t" + waitTime + " minute(s)" +
+        "\nRating:\t\t\t\t" + rating + "/5.0" +
+        "\nAverage Price:\t\t$" + avgPrice + "0" +
         "\nDistance:\t\t\t" + distance + " mi" +
         "\nHours of Operation:\t" + hoursOpen;
 
