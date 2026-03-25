@@ -10,7 +10,7 @@
 
 ### what I learned (2/18)
 - user interactions (how to take input from users via the Scanner class)
-- using getters and setters to make private data accessable but not changable to the restaurant class
+- using getters and setters to make private data accessable but not changable to the main class
 - how to use ArrayList (array that you can add and delete from at will) and toString()
 
 ### what I learned (3/9)
